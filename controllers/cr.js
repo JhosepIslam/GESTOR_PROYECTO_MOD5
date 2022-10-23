@@ -4,7 +4,9 @@ const CRSchema = require('../models/cr');
     CRSchema.find().then((data) => {
       res.status(200).json({
         ok: true,
-        data
+        data,
+        "created_by": "Jhosep Islam",
+        "carnet": "25-0464-2017"
       });
     }).catch((err) => {
       res.status(400).json({
@@ -24,7 +26,9 @@ const CRSchema = require('../models/cr');
     newProyecto.save().then((data) => {
       res.status(201).json({
         ok: true,
-        data
+        data,
+        "created_by": "Jhosep Islam",
+        "carnet": "25-0464-2017"
       });
     }).catch((err) => {
       res.status(400).json({
